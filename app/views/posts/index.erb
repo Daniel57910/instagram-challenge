@@ -1,0 +1,13 @@
+<div class="page-header"><h1>Upload Post</h1></div>
+
+<div class="media">
+  <% @posts.each do |post| %>
+    <div class="media-left">
+      <!-- Renders image -->
+      <%= link_to image_tag(post.image.url, class: 'media-object'), post.image.url, target: '_blank' %>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading"><%= post.title %></h4>
+    </div>
+  <% end %>
+</div>
