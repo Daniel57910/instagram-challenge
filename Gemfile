@@ -18,6 +18,7 @@ gem "paperclip", "~> 5.0"
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -33,4 +34,6 @@ group :test do
   gem 'rspec'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  gem 'simplecov'
+  gem 'simplecov-console'
 end
