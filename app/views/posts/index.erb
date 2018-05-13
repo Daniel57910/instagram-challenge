@@ -1,6 +1,12 @@
 <div class="page-header">
 <h1>Welcome To Fake Instagram!</h1></div>
 
+<div id="flash">
+  <% flash.each do |key, value| %>
+  <div class="flash <%= key %>"><%= value %></div>
+  <% end %>
+</div>
+
 <div class="media">
   <% @posts.each do |post| %>
     <div class="media-left">

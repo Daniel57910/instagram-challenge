@@ -6,13 +6,15 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+    p params
   end
 
   def create
     @post = Post.new(post_params)
+    p params
     if @post.save
       flash[:notice] = "Successfully added post!"
-      redirect_to root_path ('/')
+      redirect_to ('/posts')
     else
       flash[:alert] = "Error adding new post!"    
       render :new
