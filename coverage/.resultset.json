@@ -19,6 +19,13 @@
         null,
         null,
         null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/danielwork/Documents/GitHub/makers/weekend_challenge/insta_2/spec/rails_helper.rb": [
@@ -300,7 +307,6 @@
         null,
         1,
         2,
-        2,
         null,
         null,
         1,
@@ -309,6 +315,7 @@
         1,
         1,
         1,
+        null,
         null,
         0,
         0,
@@ -339,6 +346,6 @@
         null
       ]
     },
-    "timestamp": 1526226117
+    "timestamp": 1526229641
   }
 }

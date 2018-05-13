@@ -1,5 +1,7 @@
 <div class="page-header"><h1>Here You Can Upload A Post</h1></div>
 
+<%=flash[:alert]%>
+
 <%= form_for @post, html: { multipart: true } do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">

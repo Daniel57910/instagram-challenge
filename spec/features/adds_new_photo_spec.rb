@@ -12,7 +12,14 @@ RSpec.feature "Homepage/Posts", type: :feature do
     click_button('Upload Photo')
     expect(page).to have_content("Successfully added post!")
   end
-
+=begin
+  need to review error message for post uploading
+  scenario("the user tries to add a photo without uploading a photo") do
+    visit("http://localhost:3000/posts/new")
+    click_button('Upload Photo')
+    expect(page).to have_content("Error adding new post")
+  end
+=end
 end
 
 
