@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Homepage/Posts", type: :feature do
+RSpec.feature "Homepage/Posts/New", type: :feature do
   scenario("the user visits the home page") do
     visit("http://localhost:3000/posts/new")
     expect(page).to have_content("Here You Can Upload A Post")

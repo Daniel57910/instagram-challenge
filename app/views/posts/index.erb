@@ -8,6 +8,7 @@
 </div>
 
 <div class="media">
+  <%= comment_index = 0%>
   <% @posts.each do |post| %>
     <div class="media-left">
       <!-- Renders image -->
@@ -16,5 +17,10 @@
     <div class="media-body">
       <h4 class="media-heading"><%= post.title %></h4>
     </div>
+    <form action = "comments/new" method = "post">
+      <label for = "comments">Enter your comment Here</label>
+      <input type = "text" name = "comments id = "comment_<%=comment_index+=1 %>"></input>
+      <input type = "submit">
+    </form>
   <% end %>
-</div>
+</div> 
